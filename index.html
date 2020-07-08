@@ -18,42 +18,46 @@
             <div class="form-content-block">
                 <div class="input-line">
                     <div class="input-name">Name</div>
-                    <div>
-                        <input type="text" id="first-name" name="first_name">
-                        <label for="first-name">First Name</label>
-                    </div>
-                    <div>
-                        <input type="text" id="last-name" name="last_name">
-                        <label for="last-name">Last Name</label>
+                    <div class="line">
+                        <div class="column w-48">
+                            <input type="text" id="first-name" name="first_name">
+                            <label for="first-name">First Name</label>
+                        </div>
+                        <div class="column w-48">
+                            <input type="text" id="last-name" name="last_name">
+                            <label for="last-name">Last Name</label>
+                        </div>
                     </div>
                 </div>
                 <div class="input-line">
                     <div class="input-name">Company</div>
-                    <div>
-                        <input type="text" id="company-name" name="company_name">
+                    <div class="line">
+                        <input class="w-100" type="text" id="company-name" name="company_name">
                     </div>
                 </div>
                 <div class="input-line">
                     <div class="input-name">Email</div>
-                    <div>
-                        <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                    <div class="line">
+                        <input class="w-100" type="email" id="email" name="email" placeholder="example@gmail.com">
                     </div>
                 </div>
                 <div class="input-line">
                     <div class="input-name">Phone</div>
-                    <div>
-                        <input type="text" id="area-code" name="area_code">
-                        <label for="area-code">Area Code</label>
-                    </div>
-                    <div>
-                        <input type="text" id="phone-number" name="phone_number">
-                        <label for="phone-number">Phone Number</label>
+                    <div class="line">
+                        <div class="column w-20">
+                            <input type="text" id="area-code" name="area_code">
+                            <label for="area-code">Area Code</label>
+                        </div>
+                        <div class="column flex-grow">
+                            <input type="text" id="phone-number" name="phone_number">
+                            <label for="phone-number">Phone Number</label>
+                        </div>
                     </div>
                 </div>
                 <div class="input-line">
                     <div class="input-name">Subject</div>
-                    <div>
-                        <select name="subject" id="subject">
+                    <div class="line">
+                        <select class="w-100" name="subject" id="subject">
                             <option value="">Choose option</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -62,13 +66,13 @@
                     </div>
                 </div>
                 <div class="radio-line">
-                    <div class="">Are you an existing customer?</div>
-                    <div>
-                        <div>
+                    <div class="radio-text">Are you an existing customer?</div>
+                    <div class="input-line">
+                        <div class="radio-block">
                             <input type="radio" id="input-yes" name="existing-customer">
                             <label for="input-yes">Yes</label>
                         </div>
-                        <div>
+                        <div class="radio-block">
                             <input type="radio" id="input-no" name="existing-customer">
                             <label for="input-no">No</label>
                         </div>

@@ -15,12 +15,25 @@ main {
     height: 100vh;
 }
 
+.w-100 {
+    width: 100%;
+}
+
+.w-48 {
+    width: 48%;
+}
+
+.w-20 {
+    width: 20%;
+    margin-right: 15px;
+}
+
 .reg-form {
     border-radius: 8px;
     box-sizing: border-box;
     background-color: #ffffff;
     width: 550px;
-    height: 560px;
+    height: 580px;
 }
 
 .reg-form .form-heading-block {
@@ -32,7 +45,7 @@ main {
 }
 
 .reg-form .form-content-block {
-    padding: 20px 30px;
+    padding: 45px 40px;
     display: flex;
     flex-direction: column;
 }
@@ -49,11 +62,24 @@ main {
     margin-bottom: 30px;
 }
 
-.reg-form .input-line>div {
+.reg-form .line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reg-form .column {
     display: flex;
     flex-direction: column;
 }
+
+
+.reg-form .flex-grow {
+    flex-grow: 3;
+}
+
 .reg-form .input-name {
+    padding-top: 8px;
     font-size: 0.8rem;
     font-weight: 600;
     width: 100px;
@@ -61,17 +87,45 @@ main {
 
 .reg-form label {
     color: #4e4e4e;
-    margin-top: 5px;
-    font-size: 0.8rem;
+    margin: 5px 0 0 3px;
+    font-size: 0.7rem;
 }
 
 .reg-form input::placeholder {
     font-size: 0.8rem;
 }
 
-.reg-form select, input[type=text], input[type=email] {
-    padding: 8px 3px;
-    background-color: #dddddd;
+.reg-form select,
+.reg-form input[type=text],
+.reg-form input[type=email] {
+    color: #4e4e4e;;
+    font-size: 0.8rem;
+    padding: 10px 3px 10px 10px;
+    background-color: #f0f0f0;
     border: none;
     border-radius: 5px;
-} 
+}
+
+.reg-form input[type=radio] {
+    margin-right: 2px;
+}
+
+.reg-form .radio-text {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.reg-form .radio-block label {
+    padding-right: 25px;
+}
+
+.reg-form input[type=submit] {
+    text-transform: uppercase;
+    background-color: #fe646c;
+    color: #fff;
+    border: none;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 10px 27px;
+    border-radius: 3px;
+}
