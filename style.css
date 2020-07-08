@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 body {
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, #8360c3, #2ebf91);
+    background: linear-gradient(to right, #9a7cd1, #4fadd3);
     background-attachment: fixed;
 }
 
@@ -11,9 +14,64 @@ main {
     align-items: center;
     height: 100vh;
 }
+
 .reg-form {
+    border-radius: 8px;
     box-sizing: border-box;
-    background-color: #fff;
-    width: 500px;
-    height: 500px;
+    background-color: #ffffff;
+    width: 550px;
+    height: 560px;
 }
+
+.reg-form .form-heading-block {
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    padding: 5px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.reg-form .form-content-block {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reg-form .form-heading-block>h2 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.reg-form .input-line {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.reg-form .input-line>div {
+    display: flex;
+    flex-direction: column;
+}
+.reg-form .input-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 100px;
+}
+
+.reg-form label {
+    color: #4e4e4e;
+    margin-top: 5px;
+    font-size: 0.8rem;
+}
+
+.reg-form input::placeholder {
+    font-size: 0.8rem;
+}
+
+.reg-form select, input[type=text], input[type=email] {
+    padding: 8px 3px;
+    background-color: #dddddd;
+    border: none;
+    border-radius: 5px;
+} 
